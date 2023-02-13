@@ -2,8 +2,8 @@
 # from selenium.webdriver.chrome.service import Service
 # from time import sleep
 # import requests
- import sys
- import bs4
+import sys
+import bs4
 # import requests
 # s = Service(r'C:\Users\pkowalski7\Downloads\chromedriver_win32\chromedriver.exe')
 # browser = webdriver.Chrome(service=s)
@@ -173,7 +173,7 @@
 
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-from time import sleep
+#from time import sleep
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains

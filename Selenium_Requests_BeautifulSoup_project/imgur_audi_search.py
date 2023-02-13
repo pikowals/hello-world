@@ -15,7 +15,7 @@ browser.find_element(By.XPATH, '/html/body/div[2]/div/div[1]/div/div[1]/div[3]/d
 action = ActionChains(browser)
 action.send_keys(Keys.ENTER)
 action.perform()
-os.makedirs('imgur_audi', exist_ok=True)
+os.makedirs('../imgur_audi', exist_ok=True)
 
 current_URL = browser.current_url
 res = requests.get(current_URL)
@@ -38,9 +38,9 @@ for i in range(len(audiElem)):
     res = requests.get(audi_link)
     print(audi_link)
     if audi_link.endswith('.mp4') or audi_link.endswith('.gif'):
-        downloadedFile = open(os.path.join('imgur_audi', os.path.basename(audi_link)),'wb')
+        downloadedFile = open(os.path.join('../imgur_audi', os.path.basename(audi_link)), 'wb')
     else:
-        downloadedFile = open(os.path.join('imgur_audi', f'audi_{i}.jpeg'),'wb')
+        downloadedFile = open(os.path.join('../imgur_audi', f'audi_{i}.jpeg'), 'wb')
     print('Downloading file %s ' % audi_link)
     for chunk in res.iter_content(100000):
         downloadedFile.write(chunk)

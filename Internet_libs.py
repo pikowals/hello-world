@@ -70,64 +70,6 @@
 # print(spanElem.get('id'))
 # print(spanElem.get('some_nonexistent_addr')==None)
 # print(spanElem.attrs)
-# import requests
-# from selenium import webdriver
-# from selenium.webdriver.chrome.service import Service
-# from time import sleep
-# from selenium.webdriver.common.by import By
-# from selenium.webdriver.common.keys import Keys
-# from selenium.webdriver.support import expected_conditions as EC
-#
-# s = Service(r'C:\Users\pkowalski7\Downloads\chromedriver_win32\chromedriver.exe')
-# browser = webdriver.Chrome(service=s)
-# browser.get('https://www.amazon.pl/')
-# browser.find_element(By.XPATH, '/html/body/div[1]/span/form/div[3]/span[1]/span/input').click()
-# sleep(1)
-# browser.find_element(By.XPATH, '/html/body/div[1]/header/div/div[1]/div[2]/div/form/div[3]/div[1]/input').send_keys('audi')
-# browser.find_element(By.ID,'nav-search-submit-button').send_keys(Keys.ENTER)
-#
-#
-#
-# page_after_search = browser.current_url
-# exampleFile = requests.get(page_after_search)
-# exampleSoup = bs4.BeautifulSoup(exampleFile.text,features="html.parser")
-# elems = exampleSoup.select("span[class='a-size-base-plus a-color-base a-text-normal']")
-# print(len(elems))
-# # linkElem = browser.find_element(By.LINK_TEXT,'a-size-base-plus a-color-base a-text-normal')
-# browser.back()
-# browser.refresh()
-# sleep(4)
-
-
-
-import requests, os, bs4
-print(os.getcwd())
-url = 'https://xkcd.com/2700'
-os.makedirs('xkcd', exist_ok=True)
-while not url.endswith('#'):
-    print('Pobieranie strony %s' % url)
-    res =requests.get(url)
-    res.raise_for_status()
-    soup = bs4.BeautifulSoup(res.text,features="html.parser")
-    comicElem = soup.select('#comic img')                       # wszystkie elementy o nazwie img które zostały umieszczone
-    if comicElem ==[]:                                          # w elemencie którego atrybut id ma wartość comic
-        print('Nie udało się odnaleźć pliku obrazu komiksu')
-    else:
-        comicUrl = 'http:' + comicElem[0].get('src')            # pobieramy wartość atrubutu src
-        print('Pobieranie obrazu %s...' %(comicUrl))            # dodajemy wczesniej http bo src ma postać = //imgs.xkcd.com/comics/attention_span.png
-        res = requests.get(comicUrl)                            # Przekazujemy funkcji get adres obrazka
-        res.raise_for_status()
-
-        imageFile = open(os.path.join('xkcd', os.path.basename(comicUrl)), 'wb') # otwieramy plik do zapisu obrazu
-        for chunk in res.iter_content(100000):                                   # dzielimy na paczki
-            imageFile.write(chunk)                                               # Zapisujemy w pliku
-        imageFile.close()
-    nextLink = soup.select('a[rel="next"]')[0]                                   # selektor znajduje wszystkie elementy o nazwie a które maja
-    url = 'http://xkcd.com'+nextLink.get('href')                                 # atrybut o nazwie rel o wartości "next"
-
-print('Gotowe')
-
-
 
 
 # from selenium import webdriver

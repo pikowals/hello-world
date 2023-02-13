@@ -1,0 +1,1 @@
+@pyw.exe C:\Users\pikowals\AppData\Roaming\JetBrains\PyCharmCE2020.3\scratches\mcb.pyw %*

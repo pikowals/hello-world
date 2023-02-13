@@ -1,0 +1,2 @@
+Witam Szeryfa!
+To nowa linia dodana własnie po wywołaniu metody open z argumentem 'a'

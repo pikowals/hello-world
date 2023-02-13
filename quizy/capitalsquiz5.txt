@@ -1,0 +1,308 @@
+Imie i nazwisko:
+
+Data:
+
+Klasa:
+
+                    Quiz stolic stanów (Quiz 5)
+
+1. Co jest stolic¹ stanu Virginia?
+    A. Providence
+    B. Little Rock
+    C. Richmond
+    D. Topeka
+
+2. Co jest stolic¹ stanu Oklahoma?
+    A. Tallahassee
+    B. Oklahoma City
+    C. Richmond
+    D. Baton Rouge
+
+3. Co jest stolic¹ stanu Illinois?
+    A. Springfield
+    B. Des Moines
+    C. Carson City
+    D. Little Rock
+
+4. Co jest stolic¹ stanu Iowa?
+    A. Cheyenne
+    B. Des Moines
+    C. Indianapolis
+    D. Oklahoma City
+
+5. Co jest stolic¹ stanu Missouri?
+    A. Jefferson City
+    B. Albany
+    C. Montpelier
+    D. Cheyenne
+
+6. Co jest stolic¹ stanu Washington?
+    A. Albany
+    B. Honolulu
+    C. Cheyenne
+    D. Olympia
+
+7. Co jest stolic¹ stanu Arizona?
+    A. Santa Fe
+    B. Phoenix
+    C. Montgomery
+    D. Concord
+
+8. Co jest stolic¹ stanu Texas?
+    A. Austin
+    B. Indianapolis
+    C. Springfield
+    D. Dover
+
+9. Co jest stolic¹ stanu New Mexico?
+    A. Hartford
+    B. Raleigh
+    C. Honolulu
+    D. Santa Fe
+
+10. Co jest stolic¹ stanu North Carolina?
+    A. Dover
+    B. Sacramento
+    C. Pierre
+    D. Raleigh
+
+11. Co jest stolic¹ stanu Ohio?
+    A. Harrisburg
+    B. Columbus
+    C. Jefferson City
+    D. Springfield
+
+12. Co jest stolic¹ stanu South Carolina?
+    A. Denver
+    B. Columbia
+    C. Concord
+    D. Annapolis
+
+13. Co jest stolic¹ stanu North Dakota?
+    A. Pierre
+    B. Albany
+    C. Bismarck
+    D. Harrisburg
+
+14. Co jest stolic¹ stanu California?
+    A. Indianapolis
+    B. Juneau
+    C. Sacramento
+    D. Charleston
+
+15. Co jest stolic¹ stanu Arkansas?
+    A. Carson City
+    B. Little Rock
+    C. Columbia
+    D. Indianapolis
+
+16. Co jest stolic¹ stanu Delaware?
+    A. Charleston
+    B. Juneau
+    C. Dover
+    D. Saint Paul
+
+17. Co jest stolic¹ stanu South Dakota?
+    A. Carson City
+    B. Raleigh
+    C. Pierre
+    D. Sacramento
+
+18. Co jest stolic¹ stanu Pennsylvania?
+    A. Harrisburg
+    B. Carson City
+    C. Honolulu
+    D. Richmond
+
+19. Co jest stolic¹ stanu Connecticut?
+    A. Lincoln
+    B. Trenton
+    C. Hartford
+    D. Dover
+
+20. Co jest stolic¹ stanu Oregon?
+    A. Dover
+    B. Boise
+    C. Salem
+    D. Salt Lake City
+
+21. Co jest stolic¹ stanu Florida?
+    A. Madison
+    B. Helena
+    C. Tallahassee
+    D. Montpelier
+
+22. Co jest stolic¹ stanu Montana?
+    A. Columbia
+    B. Helena
+    C. Phoenix
+    D. Topeka
+
+23. Co jest stolic¹ stanu Georgia?
+    A. Saint Paul
+    B. Boston
+    C. Honolulu
+    D. Atlanta
+
+24. Co jest stolic¹ stanu Wyoming?
+    A. Cheyenne
+    B. Columbia
+    C. Frankfort
+    D. Helena
+
+25. Co jest stolic¹ stanu Nevada?
+    A. Carson City
+    B. Little Rock
+    C. Dover
+    D. Denver
+
+26. Co jest stolic¹ stanu Tennessee?
+    A. Dover
+    B. Oklahoma City
+    C. Nashville
+    D. Salt Lake City
+
+27. Co jest stolic¹ stanu Alaska?
+    A. Trenton
+    B. Augusta
+    C. Santa Fe
+    D. Juneau
+
+28. Co jest stolic¹ stanu New Hampshire?
+    A. Concord
+    B. Lansing
+    C. Pierre
+    D. Boston
+
+29. Co jest stolic¹ stanu Hawaii?
+    A. Indianapolis
+    B. Salt Lake City
+    C. Honolulu
+    D. Columbia
+
+30. Co jest stolic¹ stanu Alabama?
+    A. Richmond
+    B. Jefferson City
+    C. Montgomery
+    D. Phoenix
+
+31. Co jest stolic¹ stanu Kansas?
+    A. Frankfort
+    B. Charleston
+    C. Topeka
+    D. Montpelier
+
+32. Co jest stolic¹ stanu Maine?
+    A. Augusta
+    B. Honolulu
+    C. Annapolis
+    D. Tallahassee
+
+33. Co jest stolic¹ stanu Michigan?
+    A. Indianapolis
+    B. Lansing
+    C. Columbus
+    D. Lincoln
+
+34. Co jest stolic¹ stanu Utah?
+    A. Harrisburg
+    B. Boise
+    C. Hartford
+    D. Salt Lake City
+
+35. Co jest stolic¹ stanu Colorado?
+    A. Denver
+    B. Nashville
+    C. Helena
+    D. Juneau
+
+36. Co jest stolic¹ stanu Maryland?
+    A. Lansing
+    B. Concord
+    C. Columbia
+    D. Annapolis
+
+37. Co jest stolic¹ stanu Minnesota?
+    A. Springfield
+    B. Cheyenne
+    C. Saint Paul
+    D. Bismarck
+
+38. Co jest stolic¹ stanu Idaho?
+    A. Baton Rouge
+    B. Saint Paul
+    C. Des Moines
+    D. Boise
+
+39. Co jest stolic¹ stanu Indiana?
+    A. Concord
+    B. Indianapolis
+    C. Richmond
+    D. Saint Paul
+
+40. Co jest stolic¹ stanu Mississippi?
+    A. Little Rock
+    B. Des Moines
+    C. Jackson
+    D. Austin
+
+41. Co jest stolic¹ stanu Nebraska?
+    A. Annapolis
+    B. Richmond
+    C. Austin
+    D. Lincoln
+
+42. Co jest stolic¹ stanu Louisiana?
+    A. Olympia
+    B. Bismarck
+    C. Baton Rouge
+    D. Honolulu
+
+43. Co jest stolic¹ stanu Kentucky?
+    A. Annapolis
+    B. Jefferson City
+    C. Olympia
+    D. Frankfort
+
+44. Co jest stolic¹ stanu Vermont?
+    A. Albany
+    B. Richmond
+    C. Montpelier
+    D. Carson City
+
+45. Co jest stolic¹ stanu West Virginia?
+    A. Springfield
+    B. Oklahoma City
+    C. Frankfort
+    D. Charleston
+
+46. Co jest stolic¹ stanu New Jersey?
+    A. Carson City
+    B. Nashville
+    C. Des Moines
+    D. Trenton
+
+47. Co jest stolic¹ stanu Wisconsin?
+    A. Madison
+    B. Des Moines
+    C. Boise
+    D. Montgomery
+
+48. Co jest stolic¹ stanu New York?
+    A. Albany
+    B. Baton Rouge
+    C. Sacramento
+    D. Frankfort
+
+49. Co jest stolic¹ stanu Rhode Island?
+    A. Providence
+    B. Saint Paul
+    C. Harrisburg
+    D. Pierre
+
+50. Co jest stolic¹ stanu Massachusetts?
+    A. Hartford
+    B. Boston
+    C. Harrisburg
+    D. Lansing
+

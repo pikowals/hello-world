@@ -128,12 +128,6 @@
 # print('Gotowe')
 
 
-# for i in range(1000):
-#     s = Service(r'C:\Users\pkowalski7\Downloads\chromedriver_win32\chromedriver.exe')
-#     browser = webdriver.Chrome(service=s)
-#     browser.get('https://youtu.be/R0z1PnU9eH4')
-#     sleep(3)
-# # browser.find_element(By.XPATH, '/html/body/div[1]/span/form/div[3]/span[1]').click()
 # from selenium import webdriver
 # from selenium.webdriver.chrome.service import Service
 # from time import sleep

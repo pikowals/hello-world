@@ -179,6 +179,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 import bs4
 import os
+import requests
 
 s = Service(r'C:\Users\pkowalski7\Downloads\chromedriver_win32\chromedriver.exe')
 browser = webdriver.Chrome(service=s)
@@ -218,13 +219,5 @@ for i in range(len(audiElem)):
     for chunk in res.iter_content(100000):
         downloadedFile.write(chunk)
     downloadedFile.close()
-
-#
-# temp = 'https://imgur.com/gallery/bzCSJOw'
-# browser.get(temp)
-# soup = bs4.BeautifulSoup(browser.page_source, features="html.parser")
-# audi_cont = soup.select('.PostVideo-video-wrapper')
-# # print(soup)
-# print(audi_cont)
 
 

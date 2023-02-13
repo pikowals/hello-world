@@ -1,10 +1,3 @@
-# from selenium import webdriver
-# from selenium.webdriver.chrome.service import Service
-# from time import sleep
-# import requests
-import sys
-import bs4
-# import requests
 # s = Service(r'C:\Users\pkowalski7\Downloads\chromedriver_win32\chromedriver.exe')
 # browser = webdriver.Chrome(service=s)
 # browser.get('https://pythonexamples.org')

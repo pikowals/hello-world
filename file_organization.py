@@ -58,7 +58,9 @@
 # newZip.write('plik.txt', compress_type=zipfile.ZIP_DEFLATED)       # metodzie write przekazujemy plik który chcemy dodac do archiwum
 # newZip.close()                                                     # podajemy też typ kompresji w tym przypadku zipfile.ZIP_DEFLATED - najbardziej popularny
 
-
+##############################################################################################
+"""Changing american dates to european in files"""
+##############################################################################################
 # import re, os, shutil
 # print(os.getcwd())
 # x = 'to jest data 12-04-1991 ktora musi byc zamieniona.txt'
@@ -95,7 +97,10 @@
 #         m1 = americanDatesRegex.sub(rf'\g<2>{group3}-{group6}-\9\11', j) # grupa 3 jest pierwsza bo juz raz zamienilismy
 #         print(m1)                                                        # miejscami w pierwszej pętli wiec nie ma potrzeby robić to po raz 2
 #         m2 = shutil.move(os.path.join(r'C:\Users\Piotr\Documents\pycharm_projects\pliki', j), os.path.join(r'C:\Users\Piotr\Documents\pycharm_projects\pliki', m1))
-#         print
+
+##############################################################################################
+"""Removing zeros from the file title"""
+##############################################################################################
 # import re, shutil, os
 #
 # tekst = 'spam0041.txt'
@@ -108,7 +113,9 @@
 # for i in n1:
 #     m2 = removeZerosRegex.sub(r'''\g<2>\g<4>\g<5>''', i)
 #     m3 = shutil.move(os.path.join(r'C:\Users\Piotr\Documents\pycharm_projects\pliki', i), os.path.join(r'C:\Users\Piotr\Documents\pycharm_projects\pliki',m2))
-
+##############################################################################################
+"""Adding files to zip"""
+##############################################################################################
 # import zipfile, os
 #
 # def backupToZip(folder):
@@ -133,7 +140,9 @@
 #     print('Gotowe!')
 #
 # backupToZip(r'C:\Users\Piotr\Documents\pycharm_projects\pliki')
-
+##############################################################################################
+"""Program is looking for txt and py files and add them to the zip"""
+##############################################################################################
 # import zipfile, os, re
 # def zipPyAndTxt(folder):
 #     folder = os.path.abspath(folder)
@@ -153,7 +162,9 @@
 #                 backupZip.write(os.path.join(folders,filename))
 #     backupZip.close()
 # zipPyAndTxt(r'C:\Users\Piotr\Documents\pycharm_projects\pliki')
-
+##############################################################################################
+"""Program is looking for jpegs and pdfs and copy them in one directory"""
+##############################################################################################
 # import re, os, shutil
 #
 # def pdfJpgFinder(folder):
@@ -173,6 +184,9 @@
 #                     print(os.path.join(foldername, filename))
 #                     print(shutil.copy(os.path.join(foldername,filename), r'C:\Users\Piotr\Documents\pycharm_projects\testowy\jakistam\Nowy_folder'))
 # pdfJpgFinder(r'C:\Users\Piotr\Documents\pycharm_projects\testowy\jakistam')
+##############################################################################################
+"""Program is looking for folders and files that weights more that 1700bytes"""
+##############################################################################################
 #! python3
 # import os,shutil
 #
@@ -189,38 +203,38 @@
 #
 # bigFiles(r'C:\Users\Piotr\Documents\pycharm_projects\testowy\foty')
 
-
-import shutil, os ,re
-
-def prefixChanger(folder):
-    prefixRegex = re.compile(r'''(^(spam)
-                                   ((\d)*)
-                                   (\.)
-                                   (txt)$)''', re.VERBOSE)
-    iterator = 1
-    for foldername, subfoldername, filename in os.walk(folder):
-        for files in filename:
-            if prefixRegex.search(files):
-                n1 = prefixRegex.search(files)
-                n2 = n1.group(3)
-                if int(n2) == iterator:
-                    print('Ok')
-                else:
-                    if iterator < 10:
-                        m1 = prefixRegex.sub(rf'\g<2>00{iterator}\g<5>\g<6>', files)
-                        shutil.move(os.path.join(foldername,files),os.path.join(foldername,m1))
-                    elif iterator >10 and iterator <99:
-                        m1 = prefixRegex.sub(rf'\g<2>0{iterator}\g<5>\g<6>', files)
-                        shutil.move(os.path.join(foldername,files),os.path.join(foldername,m1))
-                    else:
-                        m1 = prefixRegex.sub(rf'\g<2>0{iterator}\g<5>\g<6>', files)
-                        shutil.move(os.path.join(foldername,files),os.path.join(foldername,m1))
-
-                iterator = iterator + 1
-prefixChanger(r'C:\pycharm_projects\pliki\spam')
-
-
-
+##############################################################################################
+"""Program is looking for spam prefix in txt files and arrange the files so that there
+are not gaps in iteration"""
+##############################################################################################
+# import shutil, os ,re
+#
+# def prefixChanger(folder):
+#     prefixRegex = re.compile(r'''(^(spam)
+#                                    ((\d)*)
+#                                    (\.)
+#                                    (txt)$)''', re.VERBOSE)
+#     iterator = 1
+#     for foldername, subfoldername, filename in os.walk(folder):
+#         for files in filename:
+#             if prefixRegex.search(files):
+#                 n1 = prefixRegex.search(files)
+#                 n2 = n1.group(3)
+#                 if int(n2) == iterator:
+#                     print('Ok')
+#                 else:
+#                     if iterator < 10:
+#                         m1 = prefixRegex.sub(rf'\g<2>00{iterator}\g<5>\g<6>', files)
+#                         shutil.move(os.path.join(foldername,files),os.path.join(foldername,m1))
+#                     elif iterator >10 and iterator <99:
+#                         m1 = prefixRegex.sub(rf'\g<2>0{iterator}\g<5>\g<6>', files)
+#                         shutil.move(os.path.join(foldername,files),os.path.join(foldername,m1))
+#                     else:
+#                         m1 = prefixRegex.sub(rf'\g<2>0{iterator}\g<5>\g<6>', files)
+#                         shutil.move(os.path.join(foldername,files),os.path.join(foldername,m1))
+#
+#                 iterator = iterator + 1
+# prefixChanger(r'C:\pycharm_projects\pliki\spam')
 
 
 

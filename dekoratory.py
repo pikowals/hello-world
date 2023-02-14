@@ -33,7 +33,7 @@
 # odpal = startstop(roll)
 # odpal()
 
-# import time
+import time
 # def measuretime(func):                                              # 4.Definicja funkcji dekorującej przyjmującej jako argument funkcję
 #     def wrapper1():                                                 # 5.Funkcja wewnętrzna funkcji dekorującej - rozszerza naszą funkcję podstawową o zliczenie czasu wykonania zadania 2.
 #         starttime = time.perf_counter()                             # 6.Do zmiennej starttime przypisuje wartość obecnego czasu
@@ -47,7 +47,7 @@
 #     print(value)                                                    # 3.Wyświetla wyliczoną sume przypisaną do zmiennej value
 # wastetime()
 # print(wastetime.__name__)
-# import re
+import re
 #
 # txt = "welcome, welcome to the jungle"  # string inside txt variable
 # z = txt.split()                         # split method to return the list of words in string

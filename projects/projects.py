@@ -181,56 +181,75 @@ For added complexity, add an option for users to select the compounding interval
 The program will figure out the change and the number of quarters, dimes, nickels, pennies needed for the change."""
 #########################################################################################################################
 
-def changeReturner():
-    hundredNr = 0
-    fiftyNr = 0
-    twentyNr = 0
-    tenNr = 0
-    fifeNr = 0
-    oneNr = 0
-    quarterNr = 0
-    dimeNr = 0
-    nickelNr = 0
-    penniesNr = 0
-    cost = float(input('Enter the cost of the product: '))
-    moneyGiven = float(input('Enter the amount of money given '))
-    moneyToBeReturned = moneyGiven - cost
-    print('Your change is %s'% round(moneyToBeReturned, 2))
-    while moneyToBeReturned >= 100:
-            hundredNr +=1
-            moneyToBeReturned = moneyToBeReturned - 100
-    while moneyToBeReturned >= 50:
-            fiftyNr += 1
-            moneyToBeReturned = moneyToBeReturned - 50
-    while moneyToBeReturned >= 20:
-            twentyNr += 1
-            moneyToBeReturned = moneyToBeReturned - 20
-    while moneyToBeReturned >= 10:
-            tenNr += 1
-            moneyToBeReturned = moneyToBeReturned - 10
-    while moneyToBeReturned >= 5:
-            fifeNr += 1
-            moneyToBeReturned = moneyToBeReturned - 5
-    while moneyToBeReturned >= 1:
-            oneNr += 1
-            moneyToBeReturned = moneyToBeReturned - 1
-    while moneyToBeReturned >= 0.25:
-            quarterNr += 1
-            moneyToBeReturned = moneyToBeReturned - 0.25
-    while moneyToBeReturned >= 0.10:
-            dimeNr += 1
-            moneyToBeReturned = moneyToBeReturned - 0.10
-    while moneyToBeReturned >= 0.05:
-            nickelNr += 1
-            moneyToBeReturned = moneyToBeReturned - 0.05
-    while moneyToBeReturned > 0:
-            penniesNr += 1
-            moneyToBeReturned = moneyToBeReturned - 0.01
-
-    print('You should receive:\n %s of hundreds\n %s of fifties\n %s of twenties\n %s of tens\n %s of fives\n %s of ones\n %s of quarters\n %s of dimes\n %s of nickles\n %s of pennies' % (hundredNr, fiftyNr, twentyNr, tenNr, fifeNr, oneNr,quarterNr,dimeNr, nickelNr, penniesNr))
-
-changeReturner()
+# def changeReturner():
+#     hundredNr = 0
+#     fiftyNr = 0
+#     twentyNr = 0
+#     tenNr = 0
+#     fifeNr = 0
+#     oneNr = 0
+#     quarterNr = 0
+#     dimeNr = 0
+#     nickelNr = 0
+#     penniesNr = 0
+#     cost = float(input('Enter the cost of the product: '))
+#     moneyGiven = float(input('Enter the amount of money given '))
+#     moneyToBeReturned = moneyGiven - cost
+#     print('Your change is %s'% round(moneyToBeReturned, 2))
+#     while moneyToBeReturned >= 100:
+#             hundredNr +=1
+#             moneyToBeReturned = moneyToBeReturned - 100
+#     while moneyToBeReturned >= 50:
+#             fiftyNr += 1
+#             moneyToBeReturned = moneyToBeReturned - 50
+#     while moneyToBeReturned >= 20:
+#             twentyNr += 1
+#             moneyToBeReturned = moneyToBeReturned - 20
+#     while moneyToBeReturned >= 10:
+#             tenNr += 1
+#             moneyToBeReturned = moneyToBeReturned - 10
+#     while moneyToBeReturned >= 5:
+#             fifeNr += 1
+#             moneyToBeReturned = moneyToBeReturned - 5
+#     while moneyToBeReturned >= 1:
+#             oneNr += 1
+#             moneyToBeReturned = moneyToBeReturned - 1
+#     while moneyToBeReturned >= 0.25:
+#             quarterNr += 1
+#             moneyToBeReturned = moneyToBeReturned - 0.25
+#     while moneyToBeReturned >= 0.10:
+#             dimeNr += 1
+#             moneyToBeReturned = moneyToBeReturned - 0.10
+#     while moneyToBeReturned >= 0.05:
+#             nickelNr += 1
+#             moneyToBeReturned = moneyToBeReturned - 0.05
+#     while moneyToBeReturned > 0:
+#             penniesNr += 1
+#             moneyToBeReturned = moneyToBeReturned - 0.01
+#
+#     print('You should receive:\n %s of hundreds\n %s of fifties\n %s of twenties\n %s of tens\n %s of fives\n %s of ones\n %s of quarters\n %s of dimes\n %s of nickles\n %s of pennies' % (hundredNr, fiftyNr, twentyNr, tenNr, fifeNr, oneNr,quarterNr,dimeNr, nickelNr, penniesNr))
+#
+# changeReturner()
 #########################################################################################################################
 """Binary to Decimal and Back Converter - 
 Develop a converter to convert a decimal number to binary or a binary number to its decimal equivalent."""
 #########################################################################################################################
+
+import math
+
+def binaryToDecimal():
+    binary = input('Wprowadź wartość w postaci binarnej: ')
+    binaryValues = list(binary)
+    print(binaryValues)
+    binIntegers = []
+    for i in range(len(binaryValues)):
+        binIntegers.append(int(binaryValues[i]))
+    print(binIntegers)
+    sum = 0
+    index = 0
+    for i in reversed(binIntegers):
+        if i == 1:
+            sum = sum + 2**index
+        index +=1
+    print(sum)
+binaryToDecimal()

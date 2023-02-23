@@ -88,39 +88,149 @@ Enter a number and have the program generate the Fibonacci sequence to that numb
 """Next Prime Number - Have the program find prime numbers until the user chooses to stop asking for the next one."""
 #########################################################################################################################
 
-def checkIfPrime(value):
-    divNr = 0
-    for i in range(1,value+1):
-        if value%i == 0:
-            divNr +=1
-    if divNr == 2:
-        return True
-    else:
-        return False
-def nextPrimeWish():
-    value = 1
-    while True:
-        print('Would you like to see prime number: ')
-        userInp = input()
-        if userInp == 'yes':
-            if checkIfPrime(value):
-                print(value)
-            else:
-                while True:
-                    value+=1
-                    if checkIfPrime(value):
-                        print(value)
-                        break
-                    else:
-                        value+=1
-                        continue
-            value+=1
-        elif userInp == 'no':
-            print('Finishing for today, bye!')
-            break
-        else:
-            print('Not recognized command, try again...')
-            continue
+# def checkIfPrime(value):
+#     divNr = 0
+#     for i in range(1,value+1):
+#         if value%i == 0:
+#             divNr +=1
+#     if divNr == 2:
+#         return True
+#     else:
+#         return False
+# def nextPrimeWish():
+#     value = 1
+#     while True:
+#         print('Would you like to see prime number: ')
+#         userInp = input()
+#         if userInp == 'yes':
+#             if checkIfPrime(value):
+#                 print(value)
+#             else:
+#                 while True:
+#                     value+=1
+#                     if checkIfPrime(value):
+#                         print(value)
+#                         break
+#                     else:
+#                         value+=1
+#                         continue
+#             value+=1
+#         elif userInp == 'no':
+#             print('Finishing for today, bye!')
+#             break
+#         else:
+#             print('Not recognized command, try again...')
+#             continue
+# nextPrimeWish()
 
+#########################################################################################################################
+"""Find Cost of Tile to Cover W x H Floor - 
+Calculate the total cost of tile it would take to cover a floor plan 
+of width and height, using a cost entered by the user."""
+#########################################################################################################################
 
-nextPrimeWish()
+# def sizeOfFloor():
+#     print('Enter the size of the floor...')
+#     print('Width ')
+#     width = float(input())
+#     print('Height  ')
+#     height = float(input())
+#     print('Enter total cost ')
+#     cost = float(input())
+#     area = width*height
+#     totalCost = cost*area
+#     return totalCost
+# print(sizeOfFloor())
+
+#########################################################################################################################
+"""Mortgage Calculator - Calculate the monthly payments of a fixed term mortgage over given 
+Nth terms at a given interest rate. Also figure out how long it will take the user to pay back the loan. 
+For added complexity, add an option for users to select the compounding interval 
+(Monthly, Weekly, Daily, Continually)."""
+#########################################################################################################################
+# def mortgageCalc():
+#     print('Enter how much you borrowed ')
+#     borrowedMoney = float(input())
+#     print('Enter the motrgage period in years ')
+#     mortgagePeriod = int(input())
+#     mortgagePeriodMonths = 12 * mortgagePeriod
+#     print('Enter the interes rates ')
+#     interestRates = float(input())
+#     monthlyInterestRates = interestRates/100/12
+#     top = (1+monthlyInterestRates)**mortgagePeriodMonths
+#     bottom = ((1+monthlyInterestRates)**mortgagePeriodMonths) -1
+#     fixedPayments = (borrowedMoney * (monthlyInterestRates*top)/bottom)
+#     #fixedPayments = borrowedMoney*((interestRates*(1+interestRates)**mortgagePeriodMonths)/((1+interestRates)**mortgagePeriodMonths -1))
+#     print(round(fixedPayments,2))
+##############################SECOND SOLUTION##################################################################################
+# mortgageCalc()
+
+# months = int(input("Enter mortgage term (in months): "))
+# rate = float(input("Enter interest rate: "))
+# loan = float(input("Enter loan value: "))
+#
+# monthly_rate = rate / 100 / 12
+# payment = (monthly_rate / (1 - (1 + monthly_rate)**(-months))) * loan
+# print(monthly_rate)
+#
+# print("Monthly payment for a $%.2f %s year mortgage at %.2f%% interest rate is: $%.2f" % (loan, (months / 12), rate, payment))
+##############################SECOND SOLUTION############################################################################
+
+#########################################################################################################################
+"""Change Return Program - The user enters a cost and then the amount of money given. 
+The program will figure out the change and the number of quarters, dimes, nickels, pennies needed for the change."""
+#########################################################################################################################
+
+def changeReturner():
+    hundredNr = 0
+    fiftyNr = 0
+    twentyNr = 0
+    tenNr = 0
+    fifeNr = 0
+    oneNr = 0
+    quarterNr = 0
+    dimeNr = 0
+    nickelNr = 0
+    penniesNr = 0
+    cost = float(input('Enter the cost of the product: '))
+    moneyGiven = float(input('Enter the amount of money given '))
+    moneyToBeReturned = moneyGiven - cost
+    print('Your change is %s'% round(moneyToBeReturned, 2))
+    while moneyToBeReturned >= 100:
+            hundredNr +=1
+            moneyToBeReturned = moneyToBeReturned - 100
+    while moneyToBeReturned >= 50:
+            fiftyNr += 1
+            moneyToBeReturned = moneyToBeReturned - 50
+    while moneyToBeReturned >= 20:
+            twentyNr += 1
+            moneyToBeReturned = moneyToBeReturned - 20
+    while moneyToBeReturned >= 10:
+            tenNr += 1
+            moneyToBeReturned = moneyToBeReturned - 10
+    while moneyToBeReturned >= 5:
+            fifeNr += 1
+            moneyToBeReturned = moneyToBeReturned - 5
+    while moneyToBeReturned >= 1:
+            oneNr += 1
+            moneyToBeReturned = moneyToBeReturned - 1
+    while moneyToBeReturned >= 0.25:
+            quarterNr += 1
+            moneyToBeReturned = moneyToBeReturned - 0.25
+    while moneyToBeReturned >= 0.10:
+            dimeNr += 1
+            moneyToBeReturned = moneyToBeReturned - 0.10
+    while moneyToBeReturned >= 0.05:
+            nickelNr += 1
+            moneyToBeReturned = moneyToBeReturned - 0.05
+    while moneyToBeReturned > 0:
+            penniesNr += 1
+            moneyToBeReturned = moneyToBeReturned - 0.01
+
+    print('You should receive:\n %s of hundreds\n %s of fifties\n %s of twenties\n %s of tens\n %s of fives\n %s of ones\n %s of quarters\n %s of dimes\n %s of nickles\n %s of pennies' % (hundredNr, fiftyNr, twentyNr, tenNr, fifeNr, oneNr,quarterNr,dimeNr, nickelNr, penniesNr))
+
+changeReturner()
+#########################################################################################################################
+"""Binary to Decimal and Back Converter - 
+Develop a converter to convert a decimal number to binary or a binary number to its decimal equivalent."""
+#########################################################################################################################

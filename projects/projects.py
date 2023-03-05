@@ -234,9 +234,6 @@ The program will figure out the change and the number of quarters, dimes, nickel
 """Binary to Decimal and Back Converter - 
 Develop a converter to convert a decimal number to binary or a binary number to its decimal equivalent."""
 #########################################################################################################################
-
-import math
-
 def binaryToDecimal():
     binary = input('Wprowadź wartość w postaci binarnej: ')
     binaryValues = list(binary)
@@ -251,5 +248,9 @@ def binaryToDecimal():
         if i == 1:
             sum = sum + 2**index
         index +=1
-    print(sum)
+    print('Postać dziesietna liczby %s to %s' %(binary,sum))
+    print('Postać binarna liczby %s to %s' % (sum, bin(sum)))
 binaryToDecimal()
+#########################################################################################################################
+"""Calculator - A simple calculator to do basic operators. Make it a scientific calculator for added complexity."""
+#########################################################################################################################

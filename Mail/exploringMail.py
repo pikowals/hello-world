@@ -113,8 +113,3 @@
 #         startTime = startTime + datetime.timedelta(minutes=1)
 #     if datetime.datetime.now() > datetime.datetime(2023,2,28,16,20,0): # konczymy uruchamianie programu po 2 minutach (3 razy wykona się petla)
 #         break
-#
-import subprocess,
-from PIL import ImageColor
-
-subprocess.Popen(r'C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE')

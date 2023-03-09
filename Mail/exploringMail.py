@@ -113,3 +113,25 @@
 #         startTime = startTime + datetime.timedelta(minutes=1)
 #     if datetime.datetime.now() > datetime.datetime(2023,2,28,16,20,0): # konczymy uruchamianie programu po 2 minutach (3 razy wykona się petla)
 #         break
+#
+import subprocess, os
+import shlex
+from PIL import Image
+
+
+# subprocess.Popen(["/usr/bin/open", "-a", "calculator"]) # Odpalanie aplikacji w MacOS
+# print(ImageColor.getcolor('CornflowerBlue','RGBA'))
+catIm = Image.open('zophie.png')
+print(catIm.size)
+width,height = catIm.size
+print(width,height)
+print(catIm.filename)
+print(catIm.format)
+print(catIm.format_description)
+print(catIm.save('zophie.jpg'))
+
+###############################
+im = Image.new('RGBA',(100,200),'purple')
+im.save('purpleImage.png')
+im2 =Image.new('RGBA',(20,20))
+im2.save('transparenImage.png')
